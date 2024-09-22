@@ -134,3 +134,11 @@ EMAIL_HOST = 'sandbox.smtp.mailtrap.io'
 EMAIL_HOST_USER = '4acfed7e33a193'
 EMAIL_HOST_PASSWORD = '2c8e06f5bedbac'
 EMAIL_PORT = '2525'
+
+
+import dj_database_url
+import os
+
+DATABASES = {
+    "default": dj_database_url.parse("postgres://stivo_user:xvxSXcHFzinX9jckHHFGhMZcnSxoPKbC@dpg-crnfcdo8fa8c738f976g-a.oregon-postgres.render.com/stivo")
+}
